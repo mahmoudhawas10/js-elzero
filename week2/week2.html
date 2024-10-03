@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week2</title>
+</head>
+<body>
+<h1 id="elzero">elzero</h1>
+<script>
+// assign 1
+let number1=10 
+let number2=20 
+console.log(number1+''+number2); // Normal Concatenate => 1020
+console.log(typeof(number1+''+number2)); // Normal Concatenate => String
+console.log(`${number1}${number2}`); // Template Literals Way => 1020
+console.log(typeof(`${number1}${number2}`)); // Template Literals Way => String
+
+console.log(number2+"\n"+number1);
+/*
+  Normal Concatenate
+  20
+  10
+*/
+
+console.log(`${number2}
+${number1}`);
+/*
+  Template Literals Way
+  20
+  10
+*/
+
+//assign 2
+console.log(elzero.innerHTML); // object
+console.log(typeof elzero); // object
+
+//assign 3
+console.log(`\`I'm In
+\\\\
+Love \\\\ \"\"\" \'\'\'
+\+\+ With \+\+
+\\\"\"\"\\\"\"\"
+\"\"JavaScript\"\"\``)
+
+//assign 4
+let a = 21;
+let b = 20;
+
+console.log("_"+a+ "_"+b+""+a+"_"+b+""+a+"_"+b+"_"); // _21_2021_2021_2021_20_
+</script>
+</body>
+</html>
